@@ -10,6 +10,21 @@
 
 Developed by **Seyed Ahmad Mousavi** — part of the [ahmadsam66](https://github.com/ahmadsam66) bioinformatics toolkit.
 
+<p align="center">
+  <img src="tempo_omics_pipeline.png"
+       alt="TEMPO — Transcriptomic Expression Modeling Pipeline for Omics (end-to-end workflow)"
+       width="900"/>
+</p>
+
+<p align="center">
+  <em>
+    <b>Figure 1.</b> TEMPO end-to-end workflow — from a raw count matrix and sample
+    labels through differential expression, feature selection, and machine-learning
+    modelling, to publication-ready tables, plots, and an HTML report. Supports both
+    <b>nominal</b> (e.g. tumor vs. normal) and <b>time-course</b> (e.g. day 0 → 11 → 16 → 45)
+    experimental designs.
+  </em>
+</p>
 ---
 
 ## Table of Contents
@@ -52,21 +67,7 @@ Bulk RNA-seq experiments typically end with a gene × sample count matrix and a 
 
 TEMPO is designed to be **small-n aware** (auto-selects LOOCV when n ≤ 12), **reproducible** (writes `run_metadata.json` for each run), and **paper-ready** (vector PDFs, BH-FDR correction, stratified CV, log2(CPM+1) normalization).
 
-<p align="center">
-  <img src="tempo_omics_pipeline.png"
-       alt="TEMPO — Transcriptomic Expression Modeling Pipeline for Omics (end-to-end workflow)"
-       width="900"/>
-</p>
 
-<p align="center">
-  <em>
-    <b>Figure 1.</b> TEMPO end-to-end workflow — from a raw count matrix and sample
-    labels through differential expression, feature selection, and machine-learning
-    modelling, to publication-ready tables, plots, and an HTML report. Supports both
-    <b>nominal</b> (e.g. tumor vs. normal) and <b>time-course</b> (e.g. day 0 → 11 → 16 → 45)
-    experimental designs.
-  </em>
-</p>
 
 ---
 
