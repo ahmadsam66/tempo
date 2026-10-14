@@ -6,7 +6,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-%3E%3D1.0-orange)](https://scikit-learn.org/)
 [![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)]()
 
-> **TEMPO** is a Python pipeline for **differential expression**, **ML-based feature selection**, **gene-trajectory clustering**, and **machine-learning modelling** of bulk RNA-seq data. It supports both **nominal** (e.g., tumor vs. normal) and **time-course** (e.g., day0 → day11 → day16 → day45) experimental designs out of the box, and produces publication-ready tables, plots, and a self-contained HTML report.
+> **TEMPO** is a Python pipeline for **differential expression**, **ML-based feature selection**, **gene-trajectory clustering**, and **machine-learning modelling** of bulk RNA-seq data. It supports both **nominal** (e.g., tumor vs. normal) and **time-course**  experimental designs out of the box, and produces publication-ready tables, plots, and a self-contained HTML report.
 
 Developed by **Seyed Ahmad Mousavi** — part of the [ahmadsam66](https://github.com/ahmadsam66) bioinformatics toolkit.
 
