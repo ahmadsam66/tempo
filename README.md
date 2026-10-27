@@ -145,7 +145,7 @@ You should see the full CLI help. If so, you're ready to run the examples below.
 # 1. Prepare a labels file (see section 5)
 # 2. Run TEMPO in one line:
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --gene_col Gene \
     --outdir results_run1
@@ -173,7 +173,7 @@ TEMPO needs **two files**:
 
 CSV or TSV. **Genes in rows, samples in columns.** First column (or `--gene_col`) holds gene IDs.
 
-**Example — `Naderi_data_raw.tsv`:**
+**Example — `exp_data_raw.tsv`:**
 
 ```
 Gene        day0_rep1  day0_rep2  day11_rep1  day11_rep2  day16_rep1  day16_rep2  day45_rep1  day45_rep2
@@ -229,7 +229,7 @@ You don't need to tell TEMPO which design you have — it figures it out.
 
 ```bash
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --gene_col Gene \
     --outdir results_basic
@@ -259,7 +259,7 @@ python tempo.py \
 
 ```bash
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --gene_col Gene \
     --pairwise_mode all \
@@ -275,7 +275,7 @@ python tempo.py \
 
 ```bash
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --pairwise_mode consecutive \
     --outdir results_consecutive
@@ -289,7 +289,7 @@ python tempo.py \
 
 ```bash
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --min_count 20 \
     --min_samples 4 \
@@ -306,7 +306,7 @@ python tempo.py \
 
 ```bash
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --min_count 3 \
     --min_samples 2 \
@@ -324,7 +324,7 @@ python tempo.py \
 
 ```bash
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --k_clusters 8 \
     --outdir results_k8
@@ -354,7 +354,7 @@ python tempo.py \
 
 ```bash
 python tempo.py \
-    --counts Naderi_data_raw.tsv \
+    --counts exp_data_raw.tsv \
     --labels labels.tsv \
     --cv_mode stratified \
     --outdir results_stratified
